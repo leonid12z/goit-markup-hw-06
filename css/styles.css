@@ -196,6 +196,11 @@ p {
   fill: var(--back-color);
 }
 
+.envelope,
+.vector {
+  margin-right: 10px;
+}
+
 /*info@devstudio.com*/
 
 .information {
