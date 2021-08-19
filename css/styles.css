@@ -738,6 +738,16 @@ p {
   background: var(--primary-text-color);
 }
 
+/* Подписывайтесь на рассылку */
+
+.footer-email-input {
+  margin-left: 70px;
+}
+
+.row {
+  color: var(--brand-color);
+}
+
 /*ПАРТФОЛИО-html*/
 /*Кнопки*/
 
