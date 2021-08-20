@@ -347,19 +347,51 @@
         <div class="footer-email-input">
             <h3 class="row">ПОДПИШИСЬ НА РАССЫЛКУ</h3>
             <ul class="row-input">
-                <li></li>
+                <li class="row-text">E-mail</li>
+                <li class="row-button">Подписаться
+                    <svg class="row-icon" width="24px" height="24px">
+                        <use href="./images/sprat-icon.svg#icon-icon"></use>
+                    </svg>
+                </li> 
             </ul>
            </div> 
         </div>
       </footer>
       <!-- Модальное окно -->
+    
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <!-- <h3 class="modal-is">Оставте свои данные мы вам перезвоним</h3> -->
             <button data-modal-close type="button" class="button-backdrop">
                 <svg  width="18px" height="18px">
                     <use href="./images/sprat.svg#icon-krst"></use>
                 </svg>
             </button>
+            <!-- Форма модального окна -->
+            <form class="form">
+        <div class="form-field">       
+        <label for="name" class="form-label">Имя</label>
+        <input type="text" name="name" id="name">
+        </div>
+        <div class="form-field">
+        <label for="tel" class="form-label">Телефон</label>
+        <input type="tel" name="tel" id="tel">
+        </div>
+        <div class="form-field">
+        <label for="main" class="form-label">Почта</label>
+        <input type="email" name="main" id="main">
+        </div>
+
+        <label for="comment" class="form-label">Комментарий</label>
+        <textarea name="comment" id="comment" cols="44" rows="12" placeholder="Введите текст"></textarea>
+
+        <input type="checkbox" name="agree" id="agree">
+        <label for="agree">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+        <br />
+
+        <button type="submit">Отправить</button>
+
+        </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>

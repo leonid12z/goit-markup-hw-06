@@ -254,59 +254,6 @@ p {
   background-size: cover;
 }
 
-/* Modalka */
-.backdrop {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-
-  top: 0;
-  left: 0;
-
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  height: 528px;
-  width: 561px;
-
-  background: var(--brand-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-.button-backdrop {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-  background: var(--brand-color);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  cursor: pointer;
-}
-
 /*Эффективное решение*/
 
 .hero-contaner {
@@ -630,6 +577,11 @@ p {
 
 /* Нижняя часть информации */
 
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+}
+
 .footer {
   background-color: var(--background-color);
   padding: 60px 0;
@@ -694,11 +646,6 @@ p {
   color: var(--brand-color);
 }
 
-.footer-container {
-  display: flex;
-  align-items: flex-start;
-}
-
 .footer-left-side {
   margin-left: 70px;
 }
@@ -741,11 +688,68 @@ p {
 /* Подписывайтесь на рассылку */
 
 .footer-email-input {
-  margin-left: 70px;
+  margin-left: 93px;
 }
 
 .row {
   color: var(--brand-color);
+}
+
+/* e-mail */
+
+.row-text {
+  /* position: absolute; */
+
+  margin-top: 20px;
+  padding: 16px;
+
+  width: 358px;
+
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  color: var(--color-backs);
+}
+
+/* Кнопка подписаться */
+
+.row-input {
+  display: flex;
+}
+
+.row-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 12px;
+  margin-top: 20px;
+
+  width: 200px;
+  height: 50px;
+
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+  font-weight: bold;
+
+  color: var(--brand-color);
+  background: var(--primary-text-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.row-icon {
+  margin-left: 10px;
+  fill: var(--brand-color);
 }
 
 /*ПАРТФОЛИО-html*/
@@ -904,4 +908,121 @@ p {
 
 .logo_nav {
   color: var(--brand-color);
+}
+
+/* Modalka */
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 528px;
+  width: 561px;
+
+  background: var(--brand-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.button-backdrop {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: var(--brand-color);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  cursor: pointer;
+}
+
+.button-backdrop:hover {
+  fill: var(--primary-text-color);
+}
+
+/* Оставте свои данные */
+
+textarea {
+  resize: none;
+}
+
+.modal-is {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  font-size: 20px;
+  line-height: 1.15;
+
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+}
+
+.form {
+  width: 480px;
+  padding: 40px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid tomato;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+
+  outline: 1px solid blue;
+}
+
+.form-field input {
+  margin: 0;
+  padding: 8px 8px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+}
+
+.form-label {
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
+
+  color: var(--back-color);
 }
