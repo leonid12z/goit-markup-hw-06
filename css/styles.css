@@ -933,12 +933,13 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  height: 528px;
-  width: 561px;
+  width: 581px;
 
   background: var(--brand-color);
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
   border-radius: 4px;
 }
 
@@ -969,16 +970,23 @@ p {
 
 /* Оставте свои данные */
 
-textarea {
-  resize: none;
+.form{
+  cursor:pointer;
 }
+
+/* .form-field input:hover{
+color: var(--primary-text-color);
+} */
+
+ textarea {
+  resize: none;
+} 
 
 .modal-is {
   display: flex;
-  align-items: center;
   justify-content: center;
 
-  margin-top: 30px;
+  margin-bottom: 30px;
 
   font-size: 20px;
   line-height: 1.15;
@@ -988,14 +996,30 @@ textarea {
   color: var(--accent-color);
 }
 
+.icon{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+
+  transform: translateY(-50%);
+
+  display:inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #212121;
+}
+
+
+/* Форма модального окна */
+
 .form {
-  width: 480px;
+  width: 520px; 
   padding: 40px;
 
   margin-left: auto;
   margin-right: auto;
 
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .form-field {
@@ -1003,7 +1027,7 @@ textarea {
   flex-direction: column;
   margin-bottom: 28px;
 
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 
 .form-field input {
@@ -1025,4 +1049,64 @@ textarea {
   letter-spacing: 0.01em;
 
   color: var(--back-color);
+}
+
+.form-label ~ .icon{
+  background-color: #2196f3;
+}
+
+.comment{
+  padding: 12px 16px;
+  
+  border-radius: 4px;
+}
+
+.submit-button{
+font-weight: bold;
+font-size: 16px;
+line-height: 1.87;
+
+letter-spacing: 0.06em;
+
+color:var(--brand-color);
+
+width: 200px;
+height: 50px;
+
+background:var(--primary-text-color);
+
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
+.agree li{
+display:flex;
+align-items: center;
+
+font-size: 14px;
+line-height: 1.71px;
+
+letter-spacing: 0.03em;
+
+color:var(--back-color);
+}
+
+.agree label{
+  margin-left: 7px;
+}
+
+/* Кнопка-отправить */
+
+.btu{
+display: flex;
+align-items: center;
+justify-content: center; 
+
+margin-top: 30px;
+}
+
+.submit-butt{
+display: flex;
+align-items: center;
+justify-content: center;
 }

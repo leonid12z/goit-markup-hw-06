@@ -358,10 +358,8 @@
         </div>
       </footer>
       <!-- Модальное окно -->
-    
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <!-- <h3 class="modal-is">Оставте свои данные мы вам перезвоним</h3> -->
             <button data-modal-close type="button" class="button-backdrop">
                 <svg  width="18px" height="18px">
                     <use href="./images/sprat.svg#icon-krst"></use>
@@ -369,28 +367,42 @@
             </button>
             <!-- Форма модального окна -->
             <form class="form">
-        <div class="form-field">       
+        <div class="form-field">
+        <h3 class="modal-is">Оставте свои данные мы вам перезвоним</h3> 
+        <span class="icon"></span>
         <label for="name" class="form-label">Имя</label>
+        
         <input type="text" name="name" id="name">
         </div>
+
         <div class="form-field">
         <label for="tel" class="form-label">Телефон</label>
+        <span class="icon"></span>
         <input type="tel" name="tel" id="tel">
         </div>
+
         <div class="form-field">
         <label for="main" class="form-label">Почта</label>
         <input type="email" name="main" id="main">
         </div>
 
+        <div class="form-field">
         <label for="comment" class="form-label">Комментарий</label>
-        <textarea name="comment" id="comment" cols="44" rows="12" placeholder="Введите текст"></textarea>
+        <textarea class="comment" name="comment" 
+        id="comment" rows="10" 
+        placeholder="Введите текст"></textarea>
+        </div>
 
+        <ul class="chekbox-agree">
+        <li class="agree">
         <input type="checkbox" name="agree" id="agree">
         <label for="agree">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-        <br />
+        </li>
+        </ul>
 
-        <button type="submit">Отправить</button>
-
+        <div class="submit-butt">
+        <button class="submit-button btu" type="submit">Отправить</button>
+        </div>
         </form>
         </div>
     </div>
