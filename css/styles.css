@@ -970,25 +970,21 @@ p {
 
 /* Оставте свои данные */
 
-.form{
-  cursor:pointer;
+.form {
+  cursor: pointer;
 }
 
-/* .form-field input:hover{
-color: var(--primary-text-color);
-} */
-
- textarea {
+textarea {
   resize: none;
-} 
+}
 
 .modal-is {
   display: flex;
+  align-items: center;
   justify-content: center;
 
-  margin-bottom: 30px;
-
   font-size: 20px;
+  margin-bottom: 30px;
   line-height: 1.15;
 
   letter-spacing: 0.03em;
@@ -996,24 +992,10 @@ color: var(--primary-text-color);
   color: var(--accent-color);
 }
 
-.icon{
-  position: absolute;
-  top: 50%;
-  left: 10px;
-
-  transform: translateY(-50%);
-
-  display:inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: #212121;
-}
-
-
 /* Форма модального окна */
 
 .form {
-  width: 520px; 
+  width: 520px;
   padding: 40px;
 
   margin-left: auto;
@@ -1030,16 +1012,19 @@ color: var(--primary-text-color);
   /* outline: 1px solid blue; */
 }
 
+.form-label {
+  top: 50%;
+  left: 48px;
+  transform: translateY(-50%);
+
+  transition: transform 250ms linear;
+}
+
 .form-field input {
-  margin: 0;
-  padding: 8px 8px;
+  padding: 12px 8px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
-
-.form-field label {
-  margin-bottom: 4px;
 }
 
 .form-label {
@@ -1051,62 +1036,100 @@ color: var(--primary-text-color);
   color: var(--back-color);
 }
 
-.form-label ~ .icon{
-  background-color: #2196f3;
-}
-
-.comment{
+.comment {
   padding: 12px 16px;
-  
+
   border-radius: 4px;
 }
 
-.submit-button{
-font-weight: bold;
-font-size: 16px;
-line-height: 1.87;
+/* Картинка svg */
 
-letter-spacing: 0.06em;
+.icon {
+  /* position: absolute; */
+  top: 50%;
+  /* left: 10px; */
 
-color:var(--brand-color);
+  transform: translateY(-50%);
 
-width: 200px;
-height: 50px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
 
-background:var(--primary-text-color);
-
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
+  background-color: #ad1414;
 }
 
-.agree li{
-display:flex;
-align-items: center;
+/* Соглошения с рассылкой */
 
-font-size: 14px;
-line-height: 1.71px;
+.agree li {
+  display: flex;
+  align-items: center;
 
-letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71px;
 
-color:var(--back-color);
+  letter-spacing: 0.03em;
+
+  color: var(--back-color);
 }
 
-.agree label{
+.agree label {
   margin-left: 7px;
 }
 
-/* Кнопка-отправить */
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
-.btu{
-display: flex;
-align-items: center;
-justify-content: center; 
-
-margin-top: 30px;
+  position: absolute;
 }
 
-.submit-butt{
-display: flex;
-align-items: center;
-justify-content: center;
+.agree::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  outline: 2px solid #2a2a2a;
+  border-radius: 4px;
+
+  background-color: lawngreen;
+}
+
+/* .checkbox:checked ~ .agree::after{
+  background-color: lightcoral;
+} */
+
+/* Кнопка-отправить */
+
+.btu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+}
+
+.submit-butt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+
+  color: var(--brand-color);
+
+  width: 200px;
+  height: 50px;
+
+  background: var(--primary-text-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
