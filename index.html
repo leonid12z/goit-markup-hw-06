@@ -366,24 +366,37 @@
                 </svg>
             </button>
             <!-- Форма модального окна -->
-            <form class="form">
+        <form class="form">   
         <div class="modal-ist">
         <h3 class="modal-is">Оставте свои данные мы вам перезвоним</h3> 
         </div>
+
         <div class="form-field">
-        <span class="icon"></span>
+        <span class="icon">
+            <svg width="18" height="18">
+            <use href="./images/sprat-icon.svg#icon-person1"></use>
+            </svg>
+        </span>
         <label for="name" class="form-label">Имя</label>
         <input type="text" class="form-input" name="name" id="name">
         </div>
 
         <div class="form-field">
-        <span class="icon"></span>
+        <span class="icon">
+            <svg width="18" height="18">
+                <use href="./images/sprat-icon.svg#icon-phone"></use>
+            </svg>
+        </span>
         <label for="tel" class="form-label">Телефон</label>
         <input type="tel" name="tel" id="tel">
         </div>
 
         <div class="form-field">
-        <span class="icon"></span>
+        <span class="icon">
+            <svg width="18" height="18">
+                <use href="./images/sprat-icon.svg#icon-email"></use>
+            </svg>
+        </span>
         <label for="main" class="form-label">Почта</label>
         <input type="email" name="main" id="main">
         </div>
@@ -394,17 +407,18 @@
         id="comment" rows="10" 
         placeholder="Введите текст"></textarea>
         </div>
-
-        <ul class="chekbox-agree">
-        <li class="agree">
+        
+        <ul class="chekbox">
+        <li>
         <input class="checkbox" type="checkbox" name="agree" id="agree">
-        <label for="agree">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+        <label class="agree" for="agree">Соглашаюсь с рассылкой и принимаю Условия договора</label>
         </li>
         </ul>
 
         <div class="submit-butt">
         <button class="submit-button btu" type="submit">Отправить</button>
         </div>
+       
         </form>
         </div>
     </div>
