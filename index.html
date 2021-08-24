@@ -367,51 +367,53 @@
             </button>
             <!-- Форма модального окна -->
         <form class="form">   
-        <div class="modal-ist">
+        <div class="modal-isti">
         <h3 class="modal-is">Оставте свои данные мы вам перезвоним</h3> 
         </div>
 
-        <div class="form-field">
-        <span class="icon">
-            <svg width="18" height="18">
-            <use href="./images/sprat-icon.svg#icon-person1"></use>
+        <label class="form-label">
+          <span class="form-text">Имя</span>
+        <input type="text"
+         class="form-input"
+          name="name">
+            <svg class="icon" width="18" height="18">
+            <use href="./images/icons_svg.svg#icon-person"></use>
             </svg>
-        </span>
-        <label for="name" class="form-label">Имя</label>
-        <input type="text" class="form-input" name="name" id="name">
-        </div>
+        </label>
 
-        <div class="form-field">
-        <span class="icon">
-            <svg width="18" height="18">
-                <use href="./images/sprat-icon.svg#icon-phone"></use>
+        <label class="form-label">
+            <span class="form-text">Телефон</span>
+            <input type="text" 
+            class="form-input" name="name">
+            <svg class="icon" width="18" height="18">
+            <use href="./images/icons_svg.svg#icon-phone"></use>
             </svg>
-        </span>
-        <label for="tel" class="form-label">Телефон</label>
-        <input type="tel" name="tel" id="tel">
-        </div>
+        </label>
 
-        <div class="form-field">
-        <span class="icon">
-            <svg width="18" height="18">
-                <use href="./images/sprat-icon.svg#icon-email"></use>
+        <label class="form-label">
+             <span class="form-text">Почта</span>
+            <input type="text" 
+            class="form-input" name="name">
+            <svg class="icon" width="18" height="18">
+            <use href="./images/icons_svg.svg#icon-email"></use>
             </svg>
-        </span>
-        <label for="main" class="form-label">Почта</label>
-        <input type="email" name="main" id="main">
-        </div>
+        </label>
 
-        <div class="form-field">
-        <label for="comment" class="form-label">Комментарий</label>
-        <textarea class="comment" name="comment" 
+        <label class="form-label">
+           <span class="form-text">Комментарий</span>
+            <textarea class="comment" name="comment" 
         id="comment" rows="10" 
         placeholder="Введите текст"></textarea>
-        </div>
+        </label>
         
         <ul class="chekbox">
         <li>
         <input class="checkbox" type="checkbox" name="agree" id="agree">
-        <label class="agree" for="agree">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+        <label class="agree" for="agree">
+            <a > Соглашаюсь с рассылкой и принимаю</a> 
+            <a>Условия договора</a>
+
+        </label>
         </li>
         </ul>
 
