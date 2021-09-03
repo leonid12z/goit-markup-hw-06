@@ -40,7 +40,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
-  /* outline: 1px solid tomato;*/
 }
 
 /*point Убрать точки*/
@@ -133,9 +132,10 @@ p {
 .logo {
   font-family: "Raleway";
   font-weight: bold;
+
   font-size: 26px;
   line-height: 1.19;
-  /* or 119% */
+  
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -145,6 +145,7 @@ p {
 .nav_item_list {
   font-weight: 500;
   display: block;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -161,6 +162,7 @@ p {
 .nav_item {
   font-weight: 500;
   display: block;
+
   padding-top: 32px;
   padding-bottom: 32px;
   margin: 0px;
@@ -217,7 +219,7 @@ p {
 .telefone {
   font-weight: 500;
   line-height: 1.71;
-  /* or 171% */
+ 
   letter-spacing: 0.03em;
 
   color: var(--back-color);
@@ -247,8 +249,6 @@ p {
     ),
     url("../images/zaglavnay.img.jpg");
 
-  /* outline: 1px solid black; */
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -266,9 +266,9 @@ p {
   width: 696px;
   margin-bottom: 30px;
   font-weight: 900;
+
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -280,18 +280,21 @@ p {
 
 .hero_button_form {
   border: none;
+
   padding: 10px 32px;
   max-width: 200px;
-
   font-weight: 700;
+
   font-size: 16px;
   line-height: 1.87;
-  /*or 187% */
+  
   letter-spacing: 0.06em;
 
   background-color: var(--primary-text-color);
   color: var(--brand-color);
   border-radius: 4px;
+
+  cursor: pointer;
 }
 
 /*Внимание к деталям и текст*/
@@ -308,8 +311,6 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
-
-  /* outline: 1px solid red; */
 }
 
 /* Значки-svg+hover */
@@ -351,7 +352,6 @@ p {
   margin-bottom: 10px;
 
   font-size: 14px;
-  /* or 114% */
 
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -364,7 +364,7 @@ p {
 .section-text {
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
+ 
   letter-spacing: 0.03em;
 
   color: var(--back-color);
@@ -386,52 +386,23 @@ p {
   text-transform: uppercase;
 }
 
-.pic-title {
+.pic li {
   position: relative;
-
-  display: inline-block;
 }
 
 .span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   position: absolute;
-  width: 370px;
-  height: 70px;
-  top: 1427px;
-  left: 271px;
+  text-align: center;
 
-  color: var(--brand-color);
-  background: rgba(47, 48, 58, 0.8);
-}
+  font-weight: bold;
 
-.span-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  top: 1427px;
-  left: 665px;
-
-  color: var(--brand-color);
-  background: rgba(47, 48, 58, 0.8);
-}
-
-.span-line {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  top: 1427px;
-  left: 1059px;
+  width: 100%;
+  padding: 27px 0;
+  bottom: 0;
+  left: 0;
 
   color: var(--brand-color);
   background: rgba(47, 48, 58, 0.8);
@@ -441,10 +412,11 @@ p {
   margin-bottom: 50px;
 
   font-weight: bold;
+  text-align: center;
+
   font-size: 36px;
   line-height: 1.16;
-  /* or 116% */
-  text-align: center;
+
   letter-spacing: 0.03em;
 
   color: var(--accent-color);
@@ -471,8 +443,6 @@ p {
   justify-content: center;
 
   margin-top: 16px;
-
-  /* outline: 1px solid red;   */
 }
 
 .userpic .userpic-our:not(:last-child) {
@@ -521,7 +491,7 @@ p {
   margin-bottom: 10px;
 
   line-height: 1.18;
-  /*or 118%*/
+  
   letter-spacing: 0.03em;
   text-align: center;
 
@@ -533,7 +503,7 @@ p {
 
   font-size: 16px;
   line-height: 1.18;
-  /* or 118% */
+  
   letter-spacing: 0.03em;
 
   color: var(--back-color);
@@ -601,9 +571,10 @@ p {
 
   font-family: "Raleway";
   font-weight: bold;
+
   font-size: 26px;
   line-height: 1.19;
-  /* or 119% */
+  
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
@@ -615,7 +586,7 @@ p {
   display: block;
 
   line-height: 1.71;
-  /* or 171% */
+ 
   letter-spacing: 0.03em;
 
   color: var(--brand-color);
@@ -628,7 +599,7 @@ p {
   margin: 0;
 
   line-height: 1.71;
-  /* or 171% */
+  
   letter-spacing: 0.03em;
 
   color: var(--color-backs);
@@ -698,7 +669,6 @@ p {
 /* e-mail */
 
 .row-text {
-  /* position: absolute; */
 
   margin-top: 20px;
   padding: 16px;
@@ -764,7 +734,6 @@ p {
 .button {
   font-size: 16px;
   line-height: 1.62;
-  /* or 162% */
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -790,8 +759,8 @@ p {
 }
 
 /* Картинки */
-
 /*pic-container*/
+
 .pic-container {
   display: flex;
   flex-wrap: wrap;
@@ -874,7 +843,6 @@ p {
 
   font-size: 18px;
   line-height: 1.55;
-  /* or 156% */
 
   letter-spacing: 0.03em;
 
@@ -888,9 +856,10 @@ p {
 
 .subject {
   font-weight: bold;
+
   font-size: 18px;
   line-height: 2;
-  /*or 200% */
+  
   letter-spacing: 0.06em;
 
   color: var(--accent-color);
@@ -898,9 +867,10 @@ p {
 
 .subtitle-text {
   font-weight: normal;
+
   font-size: 16px;
   line-height: 1.87;
-  /* or 187% */
+  
   letter-spacing: 0.03em;
 
   color: var(--back-color);
@@ -990,16 +960,12 @@ textarea {
 /* Форма модального окна */
 
 .form {
-  cursor: pointer;
-}
-
-.form {
   padding: 40px;
 
   margin-left: auto;
   margin-right: auto;
 
-  /* outline: 1px solid tomato; */
+  cursor: pointer;
 }
 
 .form-label {
@@ -1007,21 +973,17 @@ textarea {
   flex-direction: column;
 
   margin-top: 28px;
-
-  /* outline: 1px solid blue; */
 }
 
 .form-text {
   font-size: 12px;
   line-height: 1.16;
 
+  margin-bottom: 4px;
+
   letter-spacing: 0.01em;
 
   color: var(--back-color);
-}
-
-.form-text {
-  margin-bottom: 4px;
 }
 
 .form-input {
@@ -1055,14 +1017,14 @@ textarea {
   fill: var(--primary-text-color);
 }
 
-/* Соглошения с рассылкой */
-*/ .checkbox {
+ /* Соглошения с рассылкой */
+  .check-box {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 
   position: absolute;
-}
+}  
 
 .checkbox::after {
   content: "";
@@ -1074,26 +1036,24 @@ textarea {
   background-color: var(--brand-color);
 }
 
-.chekbox-label {
+.check-box-label {
   display: block;
-
   margin-top: 20px;
 }
 
 .icon-chec {
   display: inline-block;
+
   width: 16px;
   height: 15px;
+
   border: 2px solid #2a2a2a;
   border-radius: 2px;
 
-  /* background-color: #2a2a2a; */
 }
 
 .checkbox:checked + .icon-chec {
   background-size: contain;
-
-  /* background-origin: border-box; */
 
   background-repeat: no-repeat;
   background-position: center;
@@ -1106,22 +1066,20 @@ textarea {
 
 /* Текст с верху кнопки */
 
-.chek-text {
+.chek-1 {
   margin-left: 5px;
 
   line-height: 1.71;
 
   letter-spacing: 0.03em;
   color: var(--back-color);
+ 
 }
 
-.chek-texti {
-  margin-left: 5px;
+.chek-2 {
+ margin-left: 5px;
 
-  line-height: 1.71;
-
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+ color: var(--primary-text-color);
 }
 
 /* Кнопка-отправить */
