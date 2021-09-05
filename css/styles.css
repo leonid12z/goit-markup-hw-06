@@ -882,7 +882,7 @@ p {
 
   width: 528px;
 
-  background: var(--brand-color);
+  background: var(--brand-color); 
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -912,7 +912,7 @@ p {
 }
 
 .button-backdrop:hover {
-  fill: var(--primary-text-color);
+   fill: var(--primary-text-color); 
 }
 
 /* Оставте свои данные */
@@ -984,33 +984,38 @@ textarea {
   top: 28px;
   left: 15px;
 
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   cursor: pointer;
 }
 
-.form-label:hover {
-  fill: var(--primary-text-color);
+.form-input:focus, 
+.icon:hover {
+  fill: var(--primary-text-color); 
+}
+
+.label {
+  transform: translate 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 /* Соглошения с рассылкой */
-.check-box {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
+ .checkbox {
   position: absolute;
-}
 
-.checkbox::after {
-  content: "";
-  display: inline-block;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
 
-  width: 16px;
-  height: 15px;
+  overflow: hidden;
+} 
 
-  background-color: var(--brand-color);
+.check-box{
+display:flex;
+align-items: center;
+justify-content: center;
+
+margin-top: 20px;
 }
 
 .icon-chec {
@@ -1029,15 +1034,18 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
 
+  background-origin: border-box;
+ 
   border-color: var(--primary-text-color);
   background-color: var(--primary-text-color);
 
-  background-image: url(/images/Vector.svg.svg);
+  background-image: url(../images/vektor-one.svg);
 }
 
 /* Текст с верху кнопки */
 
 .chek-1 {
+  display: inline-block;
   margin-left: 5px;
 
   line-height: 1.71;
@@ -1058,7 +1066,7 @@ textarea {
   display: block;
   font-weight: bold;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 30px;
 
   font-size: 16px;
   line-height: 1.87;
