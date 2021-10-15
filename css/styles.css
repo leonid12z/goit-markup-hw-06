@@ -16,10 +16,11 @@
   --color-grey: rgba(47, 48, 58, 0.4);
   --color-white: rgba(255, 255, 255, 0.1);
   --color-gradient: #c4c4c4;
+  --border-blu: #188ce8;
 }
 
 body {
-  font-family: "Roboto", "sans-serif";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
@@ -64,6 +65,10 @@ p {
   padding: 0;
 }
 
+p {
+  display: block;
+}
+
 /*hover-kontaktam*/
 .item:hover .icon-item {
   color: var(--primary-text-color);
@@ -77,12 +82,17 @@ p {
   color: var(--brand-color);
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header {
-  border: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 /*Шапка студия,портфолио,контакты ховер*/
-.nav_item:hover {
+.nav-item:hover {
   color: var(--primary-text-color);
 }
 
@@ -96,15 +106,14 @@ p {
 
 /* Шапка Студия,Портфолио,Контакты */
 
-.nav_list {
+.nav-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-left: 93px;
 }
 
 /*Студия,Портфолио,Контакты*/
 
-.nav_list .item {
+.nav-list .item {
   margin-right: 50px;
 }
 
@@ -113,6 +122,7 @@ p {
 .auth-nav {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .auth-nav .item {
@@ -121,7 +131,7 @@ p {
 
 /*Логотип синий*/
 
-.nav_logo {
+.nav-logo {
   color: var(--primary-text-color);
 }
 
@@ -140,7 +150,7 @@ p {
 
 /*Студия Портфолио*/
 
-.nav_item_list {
+.nav-item-list {
   font-weight: 500;
   display: block;
 
@@ -157,7 +167,7 @@ p {
 
 /*Портфолио*/ /*Котакты*/
 
-.nav_item {
+.nav-item {
   font-weight: 500;
   display: block;
 
@@ -173,7 +183,7 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav_item_list::after {
+.nav-item-list::after {
   display: inline-block;
   position: absolute;
   content: "";
@@ -276,7 +286,7 @@ p {
 
 /*Заказ услуг кнопка*/
 
-.hero_button_form {
+.hero-button-form {
   border: none;
 
   padding: 10px 32px;
@@ -290,6 +300,12 @@ p {
   background-color: var(--primary-text-color);
   color: var(--brand-color);
   border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.hero-button-form:hover {
+  background: var(--border-blu);
 }
 
 /*Внимание к деталям и текст*/
@@ -330,15 +346,17 @@ p {
   padding: 94px 0;
 }
 
+/*feature-list*/
 .feature-list .item {
   width: 270px;
 }
 
-/*feature-list*/
 .feature-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*Tekst h2-h3*/
@@ -365,8 +383,10 @@ p {
 
 .pic {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+
+.pic-img:not(:last-child) {
+  margin-right: 30px;
 }
 
 .pic-title {
@@ -423,8 +443,10 @@ p {
 
 .pic-our {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+
+.pic-our .pic-team:not(:last-child) {
+  margin-right: 30px;
 }
 
 .userpic {
@@ -506,15 +528,19 @@ p {
 
 .thumb {
   display: flex;
-  justify-content: space-between;
   cursor: pointer;
 }
 
+.thumb .thumb-icon:not(:last-child) {
+  margin-right: 30px;
+}
+
 .icon-pic {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   justify-content: center;
-
-  padding: 15px 0;
+  height: 100%;
 
   fill: var(--fill-color);
 
@@ -535,7 +561,7 @@ p {
 
 .footer-container {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .footer {
@@ -552,7 +578,7 @@ p {
   font-style: normal;
 }
 
-.nav_logo {
+.nav-logo {
   display: block;
   font-family: "Raleway";
   font-weight: bold;
@@ -564,11 +590,15 @@ p {
   color: var(--primary-text-color);
 }
 
+.logo-nav {
+  color: var(--brand-color);
+}
+
 /*г.Киев пр-т ЛесиУкр*/
 
 .address-text {
   display: block;
-
+  margin-bottom: 9px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
@@ -579,7 +609,7 @@ p {
 
 .inform {
   display: block;
-  margin: 0;
+  margin-bottom: 9px;
 
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -611,12 +641,14 @@ p {
   margin-top: 20px;
 }
 
-.desc-list {
+.desc-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.desc-linc {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-right: 10px;
 
   width: 44px;
   height: 44px;
@@ -634,7 +666,7 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.desc-list:hover {
+.desc-linc:hover {
   background: var(--primary-text-color);
 }
 
@@ -718,9 +750,9 @@ p {
   letter-spacing: 0.03em;
 
   color: var(--accent-color);
+  background-color: var(--color-brand);
 
   border: none;
-  margin-right: 8px;
   cursor: pointer;
 
   transition-property: color;
@@ -729,6 +761,11 @@ p {
 
   border-radius: 4px;
   padding: 6px 22px;
+  font-weight: 500;
+}
+
+.but:not(:last-child) {
+  margin-right: 8px;
 }
 
 .button:hover {
@@ -834,7 +871,7 @@ p {
 
 .subject {
   font-weight: bold;
-
+  margin-top: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -852,9 +889,6 @@ p {
   color: var(--back-color);
 }
 
-.logo_nav {
-  color: var(--brand-color);
-}
 
 /* Modalka */
 .backdrop {
