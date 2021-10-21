@@ -69,19 +69,6 @@ p {
   display: block;
 }
 
-/*hover-kontaktam*/
-.item:hover .icon-item {
-  color: var(--primary-text-color);
-  fill: var(--primary-text-color);
-}
-
-/*Все ховер фокус*/
-.button:hover,
-.button:focus {
-  background: var(--primary-text-color);
-  color: var(--brand-color);
-}
-
 .header-container {
   display: flex;
   align-items: center;
@@ -97,11 +84,10 @@ p {
 }
 
 /* main-nav */
-
 .main-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  
 }
 
 /* Шапка Студия,Портфолио,Контакты */
@@ -211,34 +197,23 @@ p {
   margin-right: 10px;
 }
 
-/*info@devstudio.com*/
-
-.information {
+/*info@devstudio.com tel+380961111111*/
+.icon-item {
   font-weight: 500;
-
   color: var(--back-color);
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*tel+380961111111*/
-
-.telefone {
-  font-weight: 500;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--back-color);
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+/*hover-kontaktam*/
+.item:hover,
+.icon-item:hover {
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
 }
 
 /* Класс hero */
-
 .hero {
   text-align: center;
   padding: 200px 0;
@@ -302,10 +277,11 @@ p {
   border-radius: 4px;
 
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button-form:hover {
-  background: var(--border-blu);
+  background-color: var(--border-blu);
 }
 
 /*Внимание к деталям и текст*/
@@ -389,13 +365,6 @@ p {
   margin-right: 30px;
 }
 
-.pic-title {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
 .pic li {
   position: relative;
 }
@@ -476,13 +445,13 @@ p {
 
   cursor: pointer;
 
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.userpic-our:hover {
-  background: var(--primary-text-color);
+.userpic-our:hover,
+.userpic-our:focus {
+  background-color: var(--primary-text-color);
   fill: var(--brand-color);
 }
 
@@ -555,6 +524,10 @@ p {
 
   border: 1px solid var(--fill-color);
   border-radius: 4px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Нижняя часть информации */
@@ -656,18 +629,18 @@ p {
   border-radius: 50%;
   border: none;
 
-  background: var(--color-white);
+  background-color: var(--color-white);
   fill: var(--brand-color);
 
   cursor: pointer;
 
-  transition-property: background;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .desc-linc:hover {
-  background: var(--primary-text-color);
+  background-color: var(--primary-text-color);
 }
 
 /* Подписывайтесь на рассылку */
@@ -755,9 +728,8 @@ p {
   border: none;
   cursor: pointer;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   border-radius: 4px;
   padding: 6px 22px;
@@ -768,7 +740,12 @@ p {
   margin-right: 8px;
 }
 
-.button:hover {
+
+.button:hover,
+.button:focus {
+  background-color: var(--primary-text-color);
+  color: var(--brand-color);
+  
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -900,6 +877,8 @@ p {
   left: 0;
 
   background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
