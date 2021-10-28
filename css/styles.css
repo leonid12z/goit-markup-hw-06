@@ -651,7 +651,7 @@ p {
 
 /* Подписывайтесь на рассылку */
 
-.footer-email-input {
+.form-email{
   margin-left: 93px;
 }
 
@@ -661,7 +661,7 @@ p {
 
 /* e-mail */
 
-.row-text {
+ .row-text {
   margin-top: 20px;
   padding: 16px;
   width: 358px;
@@ -675,19 +675,11 @@ p {
   border-radius: 4px;
 
   color: var(--color-backs);
-}
+} 
 
 /* Кнопка подписаться */
 
-.row-input {
-  display: flex;
-  align-items: baseline;
-}
-
 .row-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   margin-left: 12px;
   margin-top: 20px;
@@ -933,11 +925,12 @@ p {
 }
 
 .icon-is {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-is:hover,
-.icon-is:focus {
+.icon-is:focus,
+.icon-is:hover {
   fill: var(--primary-text-color);
   color: var(--primary-text-color);
 }
