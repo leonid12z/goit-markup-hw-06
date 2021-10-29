@@ -651,7 +651,7 @@ p {
 
 /* Подписывайтесь на рассылку */
 
-.form-email{
+.form-email {
   margin-left: 93px;
 }
 
@@ -661,7 +661,9 @@ p {
 
 /* e-mail */
 
- .row-text {
+.row-text {
+  vertical-align: middle;
+
   margin-top: 20px;
   padding: 16px;
   width: 358px;
@@ -675,11 +677,14 @@ p {
   border-radius: 4px;
 
   color: var(--color-backs);
-} 
+  background-color: var(--background-color);
+}
 
 /* Кнопка подписаться */
 
 .row-button {
+  vertical-align: middle;
+  font-style: normal;
 
   margin-left: 12px;
   margin-top: 20px;
@@ -701,6 +706,7 @@ p {
 }
 
 .row-icon {
+  vertical-align: middle;
   margin-left: 10px;
   fill: var(--brand-color);
 }
@@ -918,19 +924,19 @@ p {
   background: var(--brand-color);
   border: 1px solid rgba(0, 0, 0, 0.2);
 
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 
   cursor: pointer;
 }
 
 .icon-is {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-is:focus,
-.icon-is:hover {
+.button-backdrop:focus,
+.button-backdrop:hover {
   fill: var(--primary-text-color);
   color: var(--primary-text-color);
 }
@@ -939,6 +945,11 @@ p {
 
 textarea {
   resize: none;
+  outline: none;
+}
+
+input {
+  outline: none;
 }
 
 .modal-is {
@@ -995,7 +1006,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
 }
