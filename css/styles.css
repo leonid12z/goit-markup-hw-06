@@ -1020,6 +1020,10 @@ input {
   border-radius: 4px;
 }
 
+.comment:focus{
+  border-color: var(--primary-text-color);
+}
+
 /* Картинка svg */
 
 .icon {
